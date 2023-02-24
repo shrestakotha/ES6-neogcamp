@@ -281,10 +281,10 @@ const printMultipleOfFive = array6 => {
 console.log(printMultipleOfFive([7, 4, 10, 7, 5, 3]))
 console.log(printMultipleOfFive([7, 5, 10, 7, 15, 3]))
 // Create a function which takes in the given object and returns another object only with the properties postalCode and city in it.
-const getAddress = obj4 => {
-    const {postalCode , city} = obj4;
-    const obj5 = {postalCode,city};
-    return obj5;
+const getAddress = ({postalCode , city}) => {
+    //const {postalCode , city} = obj4;
+    //const obj5 = {postalCode,city};
+    return {postalCode,city};
 }
 const userData = {
     name: 'Jane Doy',
